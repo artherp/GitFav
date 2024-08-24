@@ -1,5 +1,3 @@
-export class Favorites {
-    constructor(root) {
-        this.root = document.querySelector(root)
-    }
-}
+import { FavoritesView } from "./favorites.js";
+
+new FavoritesView("#app");

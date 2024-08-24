@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 :root {
     font-size: 62.5%;
@@ -11,7 +11,6 @@
     --table-first: #06161B;
     --table-second: #06181C;
     --text-color: #E1E1E6;
-
 }
 
 body {
@@ -49,7 +48,6 @@ header {
     align-items: center;
     justify-content: center;
     margin: 8.8rem 0;
-
     max-width: 112rem;
 }
 
@@ -61,7 +59,6 @@ header > img {
     display: flex;
     align-items: center;
     gap: 29rem .8rem;
-    
 }
 
 .search input {
@@ -71,32 +68,23 @@ header > img {
     border-radius: 5px;
     padding: 1.6rem;
     background-color: var(--table-second);
-    
     color: var(--text-color);
 }
 
 .search button {
     background-color: #065e7c;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    
     font-family: 'Roboto';
     font-weight: bold;
     color: var(--text-color);
-    
     border-radius: 5px;
     border: none;
-    
     height: 4.8rem;
-    
-
     padding: 1.2rem 3.2rem;
     gap: .8rem;
-
     transition: filter 1.5s;
-
     cursor: pointer;
 }
 
@@ -104,7 +92,7 @@ header > img {
     filter: brightness(1.6);
 }
 
-table {
+table{
     width: 100%;
     border-collapse: separate;
     overflow: hidden;
@@ -112,6 +100,7 @@ table {
     border: solid 1px #4A808C;
     border-radius: 1.6rem;
     box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+    transition: margin 1s ease;
 }
 
 table * {
@@ -126,7 +115,6 @@ table th {
     font-weight: bold;
     opacity: 0.8;
     padding: 1.6rem 4rem;
-    /* border-bottom: solid 1px #4A808C; */
 }
 
 table td {
@@ -150,10 +138,6 @@ table tr:last-child td:first-child {
 
 table tr:last-child td:last-child {
     border-bottom-right-radius: 1.6rem;
-}
-
-table tr:first-child  {
-    border: none;
 }
 
 table td.user {
@@ -192,19 +176,49 @@ table td.repositories, table td.followers{
 table td button {
     border: none;
     background: none;
-
     color: #F75A68;
     font-weight: bold;
     font-family: 'Roboto';
     font-size: 2rem;
-    
     cursor: pointer;
-
     margin-left: 3rem;
-
     transition: scale .7s;
 }
 
+
+
 table td button:hover {
     scale: 1.1;
+}
+
+table .empty {
+    display: flex;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    margin-left: 5rem;
+    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
+    
+    
+}
+
+table .empty td {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.empty img {
+    width: 13.2rem;
+    vertical-align: middle;
+}
+
+.empty p {
+    color: #4E5455;
+    font-size: 2.8rem;
+    font-family: 'Roboto';
+    font-weight: bold;
 }

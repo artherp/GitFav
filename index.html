@@ -13,17 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app">
+    <div id="app" class="app">
         <header>
             <img id="Gitfav" src="./assets/Gitfav.svg" alt="">
             <div class="search">
                 <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
-                <input type="text" id="input-search" placeholder="Digite o Github username que quer favoritar">
+                <input type="text" id="input" placeholder="Digite o Github username que quer favoritar">
                 <button><img src="./assets/star.svg" alt=""> FAVORITAR</button>
             </div>
         </header>
 
-        <table>
+        <table width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Usuário</th>
@@ -32,49 +32,17 @@
                     <th>Ação</th>
                 </tr>
             </thead>
-
+            
+            
             <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/artherp.png" alt="imagem de artherp">
-                        <a href="https://github.com/artherp" target="_blank">
-                            <p>Arthur Erpen</p>
-                            <span>artherp</span>
-                        </a>
-                    </td>
-
-                    <td class="repositories">
-                        23
-                    </td>
-                    <td class="followers">
-                        123234
-                    </td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                    
-                </tr>
-
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/artherp.png" alt="imagem de artherp">
-                        <a href="https://github.com/artherp" target="_blank">
-                            <p>Arthur Erpen</p>
-                            <span>artherp</span>
-                        </a>
-                    </td>
-
-                    <td class="repositories">
-                        23
-                    </td>
-                    <td class="followers">
-                        123234
-                    </td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
+                <!-- As linhas serão geradas dinamicamente -->
             </tbody>
+            <tr class="empty">
+                <td colspan="4">
+                    <img src="./assets/Estrela.svg" alt="">
+                    <p>Nenhum favorito ainda!</p>
+                </td>
+            </tr>
         </table>
     </div>
 </body>
